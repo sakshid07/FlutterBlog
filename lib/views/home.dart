@@ -82,12 +82,13 @@ class _HomePageState extends State<HomePage> {
               "Blog",
               style: TextStyle(
                 fontSize: 22.0,
-                color: Colors.blue,
+                fontWeight: FontWeight.bold,
+                color: Colors.pink,
               ),
             ),
           ],
         ),
-        backgroundColor: Colors.grey[1000],
+        backgroundColor: Colors.black,
         
 
       ),
@@ -98,7 +99,8 @@ class _HomePageState extends State<HomePage> {
           mainAxisAlignment: MainAxisAlignment.end,
           children: <Widget>[
             FloatingActionButton(
-              child: Icon(Icons.add),
+              backgroundColor: Colors.black,
+              child: Icon(Icons.add, color: Colors.white,),
               onPressed: () {
                 Navigator.push(context,
                     MaterialPageRoute(builder: (context) => CreateBlog()));
